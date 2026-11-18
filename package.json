@@ -1,6 +1,6 @@
 {
   "name": "dsh-job-desk",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "把 DSH 所有会话的后台任务收进一页，可按工作区、会话或脚本分组查看，支持看输出尾部与停止任务。",
   "type": "module",
   "main": "index.js",
@@ -18,7 +18,7 @@
     "cordis.patch.yml",
     "locale/*.json",
     "icon.svg",
-    "assets/icon-180.png",
+    "assets",
     "README.md",
     "LICENSE"
   ],
