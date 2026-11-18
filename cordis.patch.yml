@@ -1,0 +1,5 @@
+# 后台任务台：Host 半边汇总 ctx.jobs 里的全部后台任务（跨会话），
+# 浏览器半边（侧栏入口 + 主区域任务台）由 package.json 的 dsh.client 声明加载。
+- insert:
+    - id: job-desk
+      name: dsh-job-desk

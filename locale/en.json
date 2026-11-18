@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Background tasks",
+    "description": "Collects the background tasks of every DSH session into one page: group them by workspace, session, or script, then read a task's output tail, stop it, or jump to the session that started it. Open it from the “Background tasks” entry in the sidebar."
+  }
+}

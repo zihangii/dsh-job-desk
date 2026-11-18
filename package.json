@@ -1,0 +1,55 @@
+{
+  "name": "dsh-job-desk",
+  "version": "1.0.0",
+  "description": "把 DSH 所有会话的后台任务收进一页，可按工作区、会话或脚本分组查看，支持看输出尾部与停止任务。",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "assets/icon-180.png",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-layout"
+      ]
+    }
+  },
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "dsh",
+    "background-jobs",
+    "process-manager",
+    "dev-server"
+  ],
+  "license": "MIT",
+  "author": "zihangii",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zihangii/dsh-job-desk.git"
+  },
+  "homepage": "https://github.com/zihangii/dsh-job-desk",
+  "bugs": {
+    "url": "https://github.com/zihangii/dsh-job-desk/issues"
+  }
+}
